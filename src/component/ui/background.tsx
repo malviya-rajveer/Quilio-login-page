@@ -5,7 +5,7 @@ export const Background = () => {
     <div className="absolute h-full w-full">
       <Image
         alt=""
-        src={"/44.svg"}
+        src={"/Background.svg"}
         height={0}
         width={0}
         className="h-full w-full object-cover"
