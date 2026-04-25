@@ -4,7 +4,6 @@ import { Dispatch, SetStateAction } from "react";
 export const ToggleButton = ({
   setSignUp,
   signUp,
-  layoutId,
 }: {
   setSignUp: Dispatch<SetStateAction<boolean>>;
   signUp: boolean;

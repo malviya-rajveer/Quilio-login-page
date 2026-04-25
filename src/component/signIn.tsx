@@ -1,7 +1,7 @@
 "use client";
 import { IconLock, IconMail } from "@tabler/icons-react";
 import { useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { InputBox } from "./ui/inputBox";
 import "react-phone-input-2/lib/style.css";
 import { PhoneInput } from "./ui/phone-input";
