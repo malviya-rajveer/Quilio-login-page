@@ -9,11 +9,11 @@ import { EnterButton } from "./ui/Enterbutton";
 import { WalletIcon } from "./ui/walletIcon";
 import { ToggleButton } from "./ui/toggleButton";
 export const SignInCard = () => {
-  const [signUp, setSignUp] = useState<boolean>(false);
+  const [signUp, setSignUp] = useState<boolean>(true);
 
   return (
     <div className="font-inter relative z-10 mt-[22vh] mb-8">
-      {signUp && (
+      {!signUp && (
         <motion.div
           layoutId="Card-h"
           transition={{
@@ -100,7 +100,8 @@ export const SignInCard = () => {
               <WalletIcon src="/Icons/exodus.svg" />
             </motion.div>
           </div>
-          <motion.div
+          <motion.button
+            onClick={() => setSignUp(true)}
             layoutId="alreadyacc"
             transition={{
               duration: 0.18,
@@ -108,10 +109,10 @@ export const SignInCard = () => {
             className="text-placeholder mx-auto mt-3 cursor-pointer text-[10px]"
           >
             Already have an account?
-          </motion.div>
+          </motion.button>
         </motion.div>
       )}
-      {!signUp && (
+      {signUp && (
         <motion.div
           layoutId="Card-h"
           transition={{
